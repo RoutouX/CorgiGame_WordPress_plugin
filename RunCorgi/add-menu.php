@@ -11,7 +11,7 @@ function optionMenu()
         echo "
     <h1 style='text-align: center'>Option:</h1>
     <ul>
-        <li><h>Short Code = [jeux_chien]</h></li>   
+        <li><h>Short Code = [RunCorgi]</h></li>   
     </ul>
     ";
     }else{

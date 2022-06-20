@@ -86,7 +86,6 @@ nextAnimationVar = "run";
             typeAnimationCorki = nextAnimationVar;
             nextAnimationVar = "run";
         }
-        console.log(speed);
         corgiInterval = window.setTimeout(skipAnimation, speed);
     }
     skipAnimation();
@@ -355,10 +354,6 @@ if (context){
     }
 
     function stopLoose(){
-        console.log("you loose !");
-        console.log("pierre.positionX = " + pierre.positionX);
-        console.log("typeAnimationCorki = "+typeAnimationCorki);
-        console.log("numberAnimationCorgi = "+ numberAnimationCorgi);
         clearInterval(frameInterval);
         clearInterval(gameTickInterval);
         run = false;
@@ -369,7 +364,7 @@ if (context){
 
 //-------------------Debut des listener---------------------------------------------------------
 window.addEventListener("keydown", function (event) {
-    if(event.code == "Space"){
+    if(event.code == "KeyW"){
         nextAnimationVar = "jump"
     }
     else if(event.code == "Enter" && run == false){
